@@ -186,9 +186,8 @@ todoBtn.addEventListener("click", function (e) {
   };
   showTodo(newTaskObj);
   tasks.push(newTaskObj);
-  // saveTask(tasks);
+  saveTask(tasks);
 });
-
 function showTodo(newTask) {
   var li = document.createElement("li");
   li.id = newTask.id;
@@ -297,7 +296,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57025" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62392" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

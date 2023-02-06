@@ -73,7 +73,7 @@ todoBtn.addEventListener("click", (e) => {
   };
   showTodo(newTaskObj);
   tasks.push(newTaskObj);
-  // saveTask(tasks);
+  saveTask(tasks);
 });
 function showTodo(newTask) {
   const li = document.createElement("li");
